@@ -11,15 +11,15 @@
 /* #region debug */
 
     /* #region debug header */
-        .debug .header{
+        .debug.header{
             height: 80px;
             background-color: lightblue;
         }
-        .debug .container_header{
+        .debug.container_header{
             background-color: red;
         }
 
-        .debug .contents_header{
+        .debug.contents_header{
             height: 40px;
             background-color: orange;
             div{
@@ -28,58 +28,58 @@
         }
     /* #endregion debug header */
     /* #region debug main */
-        .debug .container_main{
+        .debug.container_main{
             background-color: blue;
             height: 500px;
         }
 
-        .debug .container_main_second, .debug .container_main_fourth{
+        .debug.container_main_second, .debug .container_main_fourth{
             height: 600px;
             background-color: white;
         }
 
-        .debug .container_main_third{
+        .debug.container_main_third{
             height: 600px;
             background-color: lightgray;
         }
 
-        .debug .container_main_fifth{
+        .debug.container_main_fifth{
             height: 1000px;
             background-color: lightgray;
         }
 
-        .debug .contents_main{
+        .debug.contents_main{
             height: 400px;
         }
 
-        .debug .container_main_fifth:last-child .contents_main{
+        .debug.container_main_fifth:last-child .contents_main{
             height: 900px;
         }
 
         /* debug box main*/
-        .debug .box_violet{
+        .debug.box_violet{
             background-color: violet;
             border: 1px dashed;
         }
 
-        .debug .box_one{
+        .debug.box_one{
             border: 1px dashed;
             background-color: skyblue;
         }
 
-        .debug .box_two{
+        .debug.box_two{
             border: 1px dashed;
             background-color: pink;
         }
 
-        .debug .box_green{
+        .debug.box_green{
             border: 1px dashed;
             background-color: green;
         }
     /* #endregion debug main */
     /* #region debug footer */
-        .debug .footer{
-            background-color: rgb(37, 36, 36);
+        .debug.footer{
+            background-color: rgb(36, 35, 35);
         }
 
         .debug .container_footer{
@@ -165,7 +165,7 @@
     }
 /*  #endregion header style */
 
-/*  #region main style */
+/* #region main style */
 
     .container_main, .container_main_second, .container_main_third, .container_main_fourth, .container_main_fifth{
         display: flex;
