@@ -9,72 +9,113 @@
 /* #endregion common */
 
 /* #region debug */
-    /* debug header */
-    .debug .header{
-        height: 80px;
-        background-color: lightblue;
-    }
-    .debug .container_header{
-        background-color: red;
-    }
 
-    .debug .contents_header{
-        height: 40px;
-        background-color: orange;
-        div{
+    /* #region debug header */
+        .debug .header{
+            height: 80px;
+            background-color: lightblue;
+        }
+        .debug .container_header{
+            background-color: red;
+        }
+
+        .debug .contents_header{
+            height: 40px;
+            background-color: orange;
+            div{
+                border: 1px dashed;
+            }
+        }
+    /* #endregion debug header */
+    /* #region debug main */
+        .debug .container_main{
+            background-color: blue;
+            height: 500px;
+        }
+
+        .debug .container_main_second, .debug .container_main_fourth{
+            height: 600px;
+            background-color: white;
+        }
+
+        .debug .container_main_third{
+            height: 600px;
+            background-color: lightgray;
+        }
+
+        .debug .container_main_fifth{
+            height: 1000px;
+            background-color: lightgray;
+        }
+
+        .debug .contents_main{
+            height: 400px;
+        }
+
+        .debug .container_main_fifth:last-child .contents_main{
+            height: 900px;
+        }
+
+        /* debug box main*/
+        .debug .box_violet{
+            background-color: violet;
             border: 1px dashed;
         }
-    }
 
-    /* debug main */
-    .debug .container_main{
-        background-color: blue;
-        height: 500px;
-    }
+        .debug .box_one{
+            border: 1px dashed;
+            background-color: skyblue;
+        }
 
-    .debug .container_main_second, .debug .container_main_fourth{
-        height: 600px;
-        background-color: white;
-    }
+        .debug .box_two{
+            border: 1px dashed;
+            background-color: pink;
+        }
 
-    .debug .container_main_third{
-        height: 600px;
-        background-color: lightgray;
-    }
+        .debug .box_green{
+            border: 1px dashed;
+            background-color: green;
+        }
+    /* #endregion debug main */
+    /* #region debug footer */
+        .debug .footer{
+            background-color: rgb(37, 36, 36);
+        }
 
-    .debug .container_main_fifth{
-        height: 1000px;
-        background-color: lightgray;
-    }
+        .debug .container_footer{
+            height: 630px;
+        }
 
-    .debug .contents_main{
-        height: 400px;
-    }
+        .debug.container_footer:has(.contents_footer_second){
+            height: 110px;
+        }
 
-    .debug .container_main_fifth:last-child .contents_main{
-        height: 900px;
-    }
+        .debug .contents_footer_first{
+            height: 570px;
+        }
 
-    /* debug box */
-    .debug .box_violet{
-        background-color: violet;
-        border: 1px dashed;
-    }
+        .debug .contents_footer_second{
+            background-color: aqua;
+            height: 80px;
+        }
 
-    .debug .box_one{
-        border: 1px dashed;
-        background-color: skyblue;
-    }
+        /* debug box footer */
+        .debug .box_peach{
+            background-color: peachpuff;
+            border: 1px dashed black;
+        }
 
-    .debug .box_two{
-        border: 1px dashed;
-        background-color: pink;
-    }
+        .debug .box_aquamarine{
+            background-color: aquamarine;
+            border: 1px dashed white;
+        }
 
-    .debug .box_green{
-        border: 1px dashed;
-        background-color: green;
-    }
+        .debug .logo_footer, .debug .button_footer{
+            background-color: orange;
+            border: 1px dashed black;
+            padding: 3px 5px;
+        }
+    /* #endregion debug footer */
 
 /* #endregion dubug */
 
