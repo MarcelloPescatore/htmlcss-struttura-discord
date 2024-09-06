@@ -9,15 +9,16 @@
 /* #endregion common */
 
 /* #region debug */
+    /* debug header */
     .debug .header{
         height: 80px;
         background-color: lightblue;
     }
-    .debug .container{
+    .debug .container_header{
         background-color: red;
     }
 
-    .debug .contents{
+    .debug .contents_header{
         height: 40px;
         background-color: orange;
         div{
@@ -25,50 +26,148 @@
         }
     }
 
+    /* debug main */
+    .debug .container_main{
+        background-color: blue;
+        height: 500px;
+    }
+
+    .debug .container_main_second, .debug .container_main_fourth{
+        height: 600px;
+        background-color: white;
+    }
+
+    .debug .container_main_third{
+        height: 600px;
+        background-color: lightgray;
+    }
+
+    .debug .container_main_fifth{
+        height: 1000px;
+        background-color: lightgray;
+    }
+
+    .debug .contents_main{
+        height: 400px;
+    }
+
+    .debug .container_main_fifth:last-child .contents_main{
+        height: 900px;
+    }
+
+    /* debug box */
+    .debug .box_violet{
+        background-color: violet;
+        border: 1px dashed;
+    }
+
+    .debug .box_one{
+        border: 1px dashed;
+        background-color: skyblue;
+    }
+
+    .debug .box_two{
+        border: 1px dashed;
+        background-color: pink;
+    }
+
+    .debug .box_green{
+        border: 1px dashed;
+        background-color: green;
+    }
+
 /* #endregion dubug */
 
 /* #region header style*/
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container{
-    margin: auto;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-}
-
-/* contets position */
-.contents{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    div{
+    header{
         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container_header{
+        margin: auto;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
 
-        &#logo{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            width: 25%;
-        }
+    /* contets position */
+    .contents_header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
 
-        &#link{
+        div{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-        }
 
-        &#login{
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            width: 25%;
+            &#logo{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 25%;
+            }
+
+            &#link{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+            }
+
+            &#login{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 25%;
+            }
         }
     }
-}
 /*  #endregion header style */
+
+/*  #region main style */
+
+    .container_main, .container_main_second, .container_main_third, .container_main_fourth, .container_main_fifth{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_main_third .contents_main{
+        flex-direction: row-reverse;
+    }
+
+    .container_main:first-child .contents_main{
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+
+    .contents_main{
+        display: flex;
+        width: 70%;
+        margin: auto;
+    }
+
+    /* box style */
+
+    .box_violet{
+        height: 100%;
+        width: 100%;
+    }
+
+    .box_one{
+        height: 100%;
+        width: 60%;
+    }
+
+    .box_two{
+        height: 100%;
+        width: 40%;
+    }
+
+    .box_green{
+        height: 100%;
+        width: 100%;
+    }
+
+/* #endregion main style */
