@@ -1,8 +1,30 @@
 /* #region common */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+/* #endregion common */
+
 
 /* #region debug */
+    .debug .header{
+        height: 80px;
+        background-color: lightblue;
+    }
+    .debug .container{
+        background-color: red;
+    }
+
+    .debug .contents{
+        height: 40px;
+        background-color: orange;
+        div{
+            border: 1px dashed;
+        }
+    }
+
+/* #endregion dubug */
+
