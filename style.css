@@ -8,7 +8,6 @@
 
 /* #endregion common */
 
-
 /* #region debug */
     .debug .header{
         height: 80px;
@@ -28,3 +27,48 @@
 
 /* #endregion dubug */
 
+/* #region header style*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+/* contets position */
+.contents{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    div{
+        display: flex;
+
+        &#logo{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 25%;
+        }
+
+        &#link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+
+        &#login{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 25%;
+        }
+    }
+}
+/*  #endregion header style */
